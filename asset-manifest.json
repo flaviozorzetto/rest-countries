@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/flaviozorzetto/rest-countries/static/css/main.39943bf5.css",
+    "main.js": "/flaviozorzetto/rest-countries/static/js/main.2a09cf70.js",
+    "index.html": "/flaviozorzetto/rest-countries/index.html",
+    "static/media/search_icon.svg": "/flaviozorzetto/rest-countries/static/media/search_icon.4a3d702862b90186cc74.svg",
+    "static/media/expand_more.svg": "/flaviozorzetto/rest-countries/static/media/expand_more.7dd0cb697b666a745cd5.svg",
+    "main.39943bf5.css.map": "/flaviozorzetto/rest-countries/static/css/main.39943bf5.css.map",
+    "main.2a09cf70.js.map": "/flaviozorzetto/rest-countries/static/js/main.2a09cf70.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39943bf5.css",
+    "static/js/main.2a09cf70.js"
+  ]
+}
