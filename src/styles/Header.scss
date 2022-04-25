@@ -1,0 +1,51 @@
+@import 'https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0';
+
+.app__header {
+   font-family: 'Nunito Sans', sans-serif;
+   height: 80px;
+   color: hsl(200, 15%, 8%);
+   border-bottom: 2px solid rgba(151, 151, 151, 0.261);
+   &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 100px;
+      height: 100%;
+   }
+   &__title {
+      font-weight: 800;
+      font-size: 1.8rem;
+      user-select: none;
+   }
+   &__theme__changer {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      user-select: none;
+   }
+}
+
+.dark-mode .app__header {
+   color: white;
+   background-color: hsl(209, 25%, 21%);
+}
+
+@media screen and (max-width: 1000px) {
+   .app__header {
+      &__container {
+         padding: 0 50px;
+      }
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .app__header {
+      &__container {
+         padding: 0 25px;
+      }
+      &__title {
+         font-size: 1rem;
+      }
+   }
+}
