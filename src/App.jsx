@@ -8,7 +8,7 @@ export default class App extends React.Component {
       super(props);
 
       this.state = {
-         'dark-mode': true,
+         'dark-mode': false,
       };
 
       this.handleThemeChange = this.handleThemeChange.bind(this);

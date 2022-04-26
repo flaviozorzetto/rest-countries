@@ -107,32 +107,34 @@ export default class Main extends React.Component {
    render() {
       return (
          <main className="main">
-            <header className="main__header">
-               <div className="main__search__bar">
-                  <input
-                     className="main__search__bar__input"
-                     value={this.state['search-value']}
-                     onChange={this.handleSearchOnChange}
-                     type="text"
-                     placeholder="Search for a country..."
-                  />
-               </div>
-               <div className="main__filter__bar">
-                  <select
-                     className="main__filter__bar__select"
-                     value={this.state['filter-value']}
-                     onChange={this.handleFilterOnChange}
-                     placeholder="Filter"
-                  >
-                     <option value="all">All</option>
-                     <option value="america">America</option>
-                     <option value="africa">Africa</option>
-                     <option value="asia">Asia</option>
-                     <option value="oceania">Oceania</option>
-                     <option value="europe">Europe</option>
-                  </select>
-               </div>
-            </header>
+            {this.state['single-country'].display ? null : (
+               <header className="main__header">
+                  <div className="main__search__bar">
+                     <input
+                        className="main__search__bar__input"
+                        value={this.state['search-value']}
+                        onChange={this.handleSearchOnChange}
+                        type="text"
+                        placeholder="Search for a country..."
+                     />
+                  </div>
+                  <div className="main__filter__bar">
+                     <select
+                        className="main__filter__bar__select"
+                        value={this.state['filter-value']}
+                        onChange={this.handleFilterOnChange}
+                        placeholder="Filter"
+                     >
+                        <option value="all">All</option>
+                        <option value="america">America</option>
+                        <option value="africa">Africa</option>
+                        <option value="asia">Asia</option>
+                        <option value="oceania">Oceania</option>
+                        <option value="europe">Europe</option>
+                     </select>
+                  </div>
+               </header>
+            )}
             <AppContainer
                searchVal={this.state['search-value']}
                filterVal={this.state['filter-value']}

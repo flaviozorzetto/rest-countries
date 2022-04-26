@@ -1,14 +1,14 @@
 export default function SingleCard(props) {
-   console.log(props.card.flags);
-   console.log(props.card.name);
-   console.log(props.card.population);
-   console.log(props.card.region);
-   console.log(props.card.subregion);
-   console.log(props.card.capital);
-   console.log(props.card.tld);
-   console.log(props.card.currencies);
-   console.log(props.card.languages);
-   console.log(props.card.borders);
+   // console.log(props.card.flags);
+   // console.log(props.card.name);
+   // console.log(props.card.population);
+   // console.log(props.card.region);
+   // console.log(props.card.subregion);
+   // console.log(props.card.capital);
+   // console.log(props.card.tld);
+   // console.log(props.card.currencies);
+   // console.log(props.card.languages);
+   // console.log(props.card.borders);
    return (
       <div className="app__single__card">
          <button className="app__back__button" onClick={props.backButtonClick}>
