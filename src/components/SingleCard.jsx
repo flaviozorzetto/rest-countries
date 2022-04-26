@@ -1,4 +1,14 @@
 export default function SingleCard(props) {
+   console.log(props.card.flags);
+   console.log(props.card.name);
+   console.log(props.card.population);
+   console.log(props.card.region);
+   console.log(props.card.subregion);
+   console.log(props.card.capital);
+   console.log(props.card.tld);
+   console.log(props.card.currencies);
+   console.log(props.card.languages);
+   console.log(props.card.borders);
    return (
       <div className="app__single__card">
          <button className="app__back__button" onClick={props.backButtonClick}>
@@ -71,15 +81,17 @@ export default function SingleCard(props) {
                      </span>
                   </p>
                   <ul>
-                     {props.card.borders.map(function (el, i) {
-                        let name;
-                        props.countryKeys.forEach(e => {
-                           if (e[0] == el) {
-                              name = e[1];
-                           }
-                        });
-                        return <li key={i}>{name}</li>;
-                     })}
+                     {props.card.border
+                        ? props.card.borders.map(function (el, i) {
+                             let name;
+                             props.countryKeys.forEach(e => {
+                                if (e[0] == el) {
+                                   name = e[1];
+                                }
+                             });
+                             return <li key={i}>{name}</li>;
+                          })
+                        : null}
                   </ul>
                </div>
             </div>
