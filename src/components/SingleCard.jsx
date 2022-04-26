@@ -81,7 +81,7 @@ export default function SingleCard(props) {
                      </span>
                   </p>
                   <ul>
-                     {props.card.border ? (
+                     {props.card.borders ? (
                         props.card.borders.map(function (el, i) {
                            let name;
                            props.countryKeys.forEach(e => {

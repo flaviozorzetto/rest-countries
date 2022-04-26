@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from './components/Header';
 import Main from './components/Main';
-import './styles/css/styles.css';
+// import './styles/css/styles.css';
+import './styles.scss';
 
 export default class App extends React.Component {
    constructor(props) {

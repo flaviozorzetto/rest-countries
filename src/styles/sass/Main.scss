@@ -83,7 +83,7 @@ $input_lpad: 40px;
 
    .app__container {
       margin-top: 3rem;
-      min-height: 723px;
+      min-height: 761px;
 
       .app__cards__container {
          display: grid;
@@ -323,7 +323,7 @@ $input_lpad: 40px;
       &__header {
          flex-direction: column;
          align-items: flex-start;
-         gap: 40px
+         gap: 40px;
       }
       .app__container {
          .app__cards__container {
