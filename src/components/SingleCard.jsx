@@ -81,17 +81,19 @@ export default function SingleCard(props) {
                      </span>
                   </p>
                   <ul>
-                     {props.card.border
-                        ? props.card.borders.map(function (el, i) {
-                             let name;
-                             props.countryKeys.forEach(e => {
-                                if (e[0] == el) {
-                                   name = e[1];
-                                }
-                             });
-                             return <li key={i}>{name}</li>;
-                          })
-                        : null}
+                     {props.card.border ? (
+                        props.card.borders.map(function (el, i) {
+                           let name;
+                           props.countryKeys.forEach(e => {
+                              if (e[0] == el) {
+                                 name = e[1];
+                              }
+                           });
+                           return <li key={i}>{name}</li>;
+                        })
+                     ) : (
+                        <li>No borders</li>
+                     )}
                   </ul>
                </div>
             </div>
